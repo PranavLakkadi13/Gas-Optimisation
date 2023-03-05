@@ -46,7 +46,12 @@ contract funcName {
     PUSH - 3 gas 
     JUMP - 10 gas 
     DUP1 - 3 gas 
-
+    
+    total = 22 gas
+    
+--> Therefore each check lower the function is, it will cost 22 gas, 
+    Thus, green() is two function checks lower costing 22 * 2 = 44 gas more than red()
+    
 --> CONCLUTION - 
     is that when u name a fuction that uses a large amount of gas name it in way that its Hex code starts with the 
     smallest number so that it can avoid the checks needed of other functions. Thus, saving gas!!!
