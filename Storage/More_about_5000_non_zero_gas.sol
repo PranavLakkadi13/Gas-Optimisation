@@ -7,12 +7,14 @@ contract More_On_Non_Zero_gas {
 
     // First costs 43,300
     // The execution cost is 22,236 gas(first time access-> 2100, and change from 0 to non-zero -> 20,000)
+    // The rest 21,000 comes from transaction fee 
     function setOne() external  {
         myInteger = 1;
     }
 
     // then the change to set it as 2 costs 26,222
     // the execution cost is 5158 gas (zeroness chcek -2,900 and cold acc -> 2,100)
+    // The rest 21,000 comes from transaction fee
     function setTwo() external {
         myInteger = 2;
     }
